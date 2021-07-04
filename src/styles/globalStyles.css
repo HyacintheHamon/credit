@@ -1,0 +1,14 @@
+@font-face {
+  src: url('react-native-vector-icons/Fonts/AntDesign.ttf');
+  font-family: AntDesign;
+}
+
+@font-face {
+  src: url('react-native-vector-icons/Fonts/FontAwesome.ttf');
+  font-family: FontAwesome;
+}
+
+@font-face {
+  src: url('react-native-vector-icons/Fonts/Feather.ttf');
+  font-family: Feather;
+}
