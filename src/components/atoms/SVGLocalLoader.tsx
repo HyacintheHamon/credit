@@ -89,11 +89,7 @@ const SVGLocalLoader: React.FC<Props> = props => {
 
   return Platform.OS === 'web' ? (
     <Image
-      style={{
-        width: width ? width : '100%',
-        height: height ? height : '100%',
-        resizeMode: 'contain',
-      }}
+      style={{width: width, height: height, resizeMode: 'contain'}}
       source={MyComponent}
     />
   ) : (
