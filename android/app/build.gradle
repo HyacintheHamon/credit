@@ -193,6 +193,8 @@ dependencies {
 
     implementation project(':react-native-plaid-link-sdk')
 
+    implementation 'io.intercom.android:intercom-sdk-base:5.+'
+
     addUnimodulesDependencies()
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {

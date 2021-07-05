@@ -1,5 +1,6 @@
 #import "AppDelegate.h"
 
+#import <Intercom/Intercom.h>
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
@@ -48,6 +49,9 @@ static void InitializeFlipper(UIApplication *application) {
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
                                                    moduleName:@"credit"
                                             initialProperties:nil];
+
+  [Intercom setApiKey:@"ios_sdk-03aaf17a261fe9e2ff70ee624c20a6ba6b125827" forAppId:@"tcosycu7"];
+  [Intercom registerUnidentifiedUser];
 
   if (@available(iOS 13.0, *)) {
       rootView.backgroundColor = [UIColor systemBackgroundColor];
